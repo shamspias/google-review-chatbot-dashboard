@@ -7,5 +7,5 @@ class ReviewListCreate(generics.ListCreateAPIView):
     """
     List all reviews, or create a new review.
     """
-    queryset = Review.objects.all().order_by('-created_at')
+    queryset = Review.objects.all()
     serializer_class = ReviewSerializer
