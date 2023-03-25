@@ -4,3 +4,5 @@ markdown
 django-filter
 dj-database-url
 python-dotenv
+django-cors-headers
+drf-yasg
