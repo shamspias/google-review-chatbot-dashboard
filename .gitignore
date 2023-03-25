@@ -1,0 +1,90 @@
+# Django and SQLite
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media
+
+# Virtualenv
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+pip-log.txt
+pip-delete-this-directory.txt
+*.egg
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.pytest-selenium/
+htmlcov/
+.coverage.jenkins
+.coverage.*.jenkins
+.coverage.*.pylint
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Flask
+instance/
+.webassets-cache
+
+# Directories
+.cache/
+.project
+.pydevproject
+
+# Files
+*.log.*
+*.bak
+*.swp
+*~
+*.pyc
+.DS_Store
+.ipynb_checkpoints
+*.pid
+*.svg
+*.bak
+*.swp
+*~
+*.pyc
+.DS_Store
+.ipynb_checkpoints
+*.pid
+*.svg
+*.seed
+*.json
+
+# dotenv
+.env
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# IDE - PyCharm, Visual Studio Code
+.idea/
+.vscode/
+*.iml
+*.iws
+*.suo
+*.user
+*.userosscache
+*.pyre/
+*.sublime-workspace
+*.sublime-project
