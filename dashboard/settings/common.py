@@ -4,6 +4,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
+SITE_URL = os.getenv('SITE_URL', 'http://localhost:8000')
+
 # Application definition
 
 DJANGO_APPS = [
@@ -43,7 +45,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-z#p-sa90q*k(n9xh132k@rgo=sd3@501=(%l8xpn=c-+yr&q=0')
 ROOT_URLCONF = 'dashboard.urls'
+WSGI_APPLICATION = 'dashboard.wsgi.application'
+ASGI_APPLICATION = 'dashboard.asgi.application'
+
+CORS_ORIGIN_ALLOW_ALL = bool(os.getenv('CORS_ORIGIN_ALLOW_ALL', True))
 
 TEMPLATES = [
     {
@@ -59,8 +66,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WSGI_APPLICATION = 'dashboard.wsgi.application'
 
 # Internationalization
 LANGUAGE_CODE = 'en-us'
